@@ -12,6 +12,19 @@ body, html{
 
 }
 
+a{
+
+	text-decoration: none;
+	color: #666;
+
+}
+
+a:hover{
+
+	text-decoration:underline;
+
+}
+
 .bg-img1, .bg-img2, .bg-img3{
 
 	background-color: #351F39;
@@ -46,19 +59,22 @@ body, html{
 table{
 
 	text-align: left;
+	border-collapse: collapse;
 
 }
 
 td{
 
-	text-overflow: false;
+	border:1px solid #666;
+	padding-left: 10px;
+	padding-right: 10px;
 
 }
 
 .img-txt{
 
 	position: absolute;
-	top:50%;
+	top:45%;
 	width: 100%;
 	text-align: center;
 	color: white;
