@@ -6,9 +6,12 @@
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<title>Ruben Sanchez</title>
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 		<script src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.2.min.js" type="text/javascript"></script>
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 		<script src="scripts/git.js" type="text/javascript"></script>
+		<script src="scripts/animations.js" type="text/javascript"></script>
 		<script type="text/javascript">
 		    $(function() {
 		        $("#my-github-projects").loadRepositories("Ruben1729");
@@ -17,43 +20,48 @@
 
 	</head>
 	<body>
-
+		<div id="navbar">
+		
+			<a href="">Home</a>
+			<a href="#aboutMe">About Me</a>
+			<a href="#portfolio">Portfolio</a>
+			<a href="#contact">Contact</a>
+			
+		</div>
 		<div class="bg-img1">
 			<div class="img-txt">
 				Ruben Sanchez
 			</div>
 		</div>
-		<section class="section section-light">
+		<section id="aboutMe" class="section section-dark">
 			<h2>About me</h2>
 			<p>
-				I am a computer science student currently studying at Vanier.
+				Ever since I was a child I have always loved creating things.
+			</p>
+			<p>
+				I am a computer science student currently studying at Vanier. I spend a lot of my time programming and learning new subjects related to computer science and other science fields.
 			</p>
 		</section>
 
-		<div class="bg-img2">
-			<div class="img-txt">
-				Portfolio
-			</div>
-		</div>
-		<section class="section section-light">
+		<section id="portfolio" class="section section-light">
 		<h2>Personal Projects</h2>
 		<p>I have included below all of my repositories from my github account. These are personal projects I have worked on by myself or with my friends.</p>
 		<div id="my-github-projects"/>
 		</section>
 
-		<div class="bg-img3">
-			<div class="img-txt">
-				Contact
-			</div>
-		</div>
-		<section class="section section-light">
-			<h2>Contact Me</h2>
+		<section id="contact" class="section section-dark">
+			<h2>Contact Information</h2>
 			<p>Phone Number : 514 - 589 - 1988</p>
 			<p>E-mail : ruben.e.sanchez.a@gmail.com</p>
 		</section>
 
+		<section class="section section-dark icon">
+			<a class="icon-link" href=""><i class="fa fa-linkedin-square"></i></a>
+			<a class="icon-link" href="https://github.com/Ruben1729"><i class="fa fa-github-square"></i></a>
+		</section>
+
 		<section class="section section-dark">
-			<p><a class="navigation-hyperlink" href="">To The Top</a></p>
+			<p><a id="topBtn" class="navigation-hyperlink" href="">Back To Top</a></p>
 		</section>
 
 	</body>

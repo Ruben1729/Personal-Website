@@ -14,6 +14,7 @@ jQuery.fn.loadRepositories = function(username) {
 
         var table = $('<table/>');
         target.empty().append(table);
+        table.append('<tr><th>Project Name</th><th>Programming Language</th><th>Project Description</th></tr>');
         $(repos).each(function() {
             if (this.name != (username.toLowerCase()+'.github.com')) {
                 table.append('<tr><td><a href="'+ (this.homepage?this.homepage:this.html_url) +'">' + this.name + '</a></td><td>'+(this.language?('('+this.language+')'):'')+'</td><td>' + this.description +'</td></tr>');
