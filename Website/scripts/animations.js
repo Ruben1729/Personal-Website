@@ -12,16 +12,25 @@ $(document).ready(function() {
 		return false;
 	});
 
+	$('.menu').click(function(){
+
+		$('.list').toggleClass('active');
+
+	})
+
 });
 
 $(window).on('scroll', function(){
 
-	if($(window).scrollTop()){
+	if($(window).scrollTop() && $(window).width() > 768){
 
-		$('nav').addClass('black');
+		$('#navbar').removeClass('transparent');
+		$('#navbar').addClass('black');
+
 
 	}else{
-		$('nav').removeClass('black');
+		$('#navbar').removeClass('black');
+		$('#navbar').addClass('transparent');
 	}
 
 });
