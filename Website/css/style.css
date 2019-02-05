@@ -48,10 +48,24 @@ a:hover{text-decoration:underline;}
 
 }
 
+li{
+
+	text-align: left;
+
+}
+
+.list{
+
+	padding-left: 270px;
+
+}
+
 table{
 
 	text-align: left;
 	border-collapse: collapse;
+	margin-right: 250px;
+	margin-left: 250px;
 
 }
 
@@ -116,7 +130,7 @@ td a{color:#666;}
 
 	color:#ddd;
 
-}
+}  
 
 #navbar {
   overflow: hidden;
@@ -140,5 +154,33 @@ td a{color:#666;}
 #navbar a:hover{
 
 	text-decoration: underline;
+
+}
+
+.info{
+
+	text-align: left;
+	margin-left: 250px;
+	margin-right: 250px;
+
+}
+
+.subheader{
+
+	position: absolute;
+	top:50%;
+	text-align: center;
+	color: white;
+	font-size: 17px;
+	padding-left: 250px;
+	padding-right: 250px;
+
+}
+
+h1{
+
+	text-align: left;
+	margin-left: 250px;
+	maring-right: 250px;
 
 }
