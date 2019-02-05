@@ -14,10 +14,21 @@ $(document).ready(function() {
 
 });
 
+$(window).on('scroll', function(){
+
+	if($(window).scrollTop()){
+
+		$('nav').addClass('black');
+
+	}else{
+		$('nav').removeClass('black');
+	}
+
+});
 
 function scrollToElem(elemId){
 
 	$('html, body').animate({scrollTop: 
-		($(elemId).offset().top)}, 'slow');
+		($(elemId).offset().top - 90)}, 'slow');
 
 }
